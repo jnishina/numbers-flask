@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Odd Numbers</title>
+    </head>
+    <body>
+        <ul>
+        {% for num in range(1, n+1) %}
+            {% if not num%2==0 %}
+                <li>{{num}}</li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Prime Numbers</title>
+    </head>
+    <body>
+        <ul>
+        {% for num in range(2, n+1) %}
+            {% if primes[num] %}
+                <li>{{num}}</li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </body>
+</html>
