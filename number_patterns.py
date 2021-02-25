@@ -40,6 +40,9 @@ def primeNumbers(num: int):
     try:
         if int(num) < 1:
             return "<p>Oops! This function only returns numbers greater than or equal to 1.</p>"
+        if int(num) == 1:
+            return "<p>No prime numbers in this range.</p>"
+        
         numInt = int(num)
         primes = [1] * (numInt+1)
         primes[0] = primes[1] = 0
